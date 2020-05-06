@@ -9,7 +9,7 @@ end
 def reverse_each_word(string)
   array = string.split(" ")
   new_array = array.collect do |word|
-    word.reverse
+    word.reverse # Enumerables always seem to return arrays!
   end
   new_array.join(" ")
 end
